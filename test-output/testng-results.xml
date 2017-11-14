@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" ignored="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="QaPro" duration-ms="14725" started-at="2017-11-14T03:01:57Z" finished-at="2017-11-14T03:02:12Z">
+    <groups>
+    </groups>
+    <test name="==================aceBook SignUp testing using FirefoxTest===============" duration-ms="3009" started-at="2017-11-14T03:01:57Z" finished-at="2017-11-14T03:02:00Z">
+      <class name="testcases.fbSignUpTC">
+        <test-method status="FAIL" signature="browserInitialize(java.lang.String, java.lang.String)[pri:0, instance:testcases.fbSignUpTC@551aa95a]" name="browserInitialize" is-config="true" duration-ms="2889" started-at="2017-11-13T22:01:57Z" finished-at="2017-11-13T22:02:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.facebook.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/w3c/dom/ElementTraversal]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+	at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at org.openqa.selenium.firefox.internal.FileExtension.readIdFromInstallRdf(FileExtension.java:98)
+	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:61)
+	at org.openqa.selenium.firefox.internal.ClasspathExtension.writeTo(ClasspathExtension.java:64)
+	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+	at base.configuration.browserInitialize(configuration.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:459)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 57 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialize -->
+        <test-method status="SKIP" signature="signUp()[pri:0, instance:testcases.fbSignUpTC@551aa95a]" name="signUp" duration-ms="1" started-at="2017-11-13T22:02:00Z" finished-at="2017-11-13T22:02:00Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/w3c/dom/ElementTraversal]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+	at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at org.openqa.selenium.firefox.internal.FileExtension.readIdFromInstallRdf(FileExtension.java:98)
+	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:61)
+	at org.openqa.selenium.firefox.internal.ClasspathExtension.writeTo(ClasspathExtension.java:64)
+	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+	at base.configuration.browserInitialize(configuration.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:459)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 57 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:testcases.fbSignUpTC@551aa95a]" name="afterTest" is-config="true" duration-ms="0" started-at="2017-11-13T22:02:00Z" finished-at="2017-11-13T22:02:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testcases.fbSignUpTC -->
+    </test> <!-- ==================aceBook SignUp testing using FirefoxTest=============== -->
+    <test name=" =============FaceBook SignUp testing using ChtomeTest==================" duration-ms="14725" started-at="2017-11-14T03:01:57Z" finished-at="2017-11-14T03:02:12Z">
+      <class name="testcases.fbSignUpTC">
+        <test-method status="PASS" signature="browserInitialize(java.lang.String, java.lang.String)[pri:0, instance:testcases.fbSignUpTC@5a8e6209]" name="browserInitialize" is-config="true" duration-ms="8578" started-at="2017-11-13T22:01:57Z" finished-at="2017-11-13T22:02:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.facebook.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialize -->
+        <test-method status="PASS" signature="signUp()[pri:0, instance:testcases.fbSignUpTC@5a8e6209]" name="signUp" duration-ms="3843" started-at="2017-11-13T22:02:06Z" finished-at="2017-11-13T22:02:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testcases.fbSignUpTC@5a8e6209]" name="afterTest" is-config="true" duration-ms="2211" started-at="2017-11-13T22:02:09Z" finished-at="2017-11-13T22:02:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testcases.fbSignUpTC -->
+    </test> <!--  =============FaceBook SignUp testing using ChtomeTest================== -->
+  </suite> <!-- QaPro -->
+</testng-results>

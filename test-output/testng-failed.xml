@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [QaPro]" parallel="tests">
+  <test name="==================aceBook SignUp testing using FirefoxTest===============(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="url" value="https://www.facebook.com"/>
+    <classes>
+      <class name="testcases.fbSignUpTC">
+        <methods>
+          <include name="afterTest"/>
+          <include name="browserInitialize"/>
+          <include name="signUp"/>
+        </methods>
+      </class> <!-- testcases.fbSignUpTC -->
+    </classes>
+  </test> <!-- ==================aceBook SignUp testing using FirefoxTest===============(failed) -->
+</suite> <!-- Failed suite [QaPro] -->
